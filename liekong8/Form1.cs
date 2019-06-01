@@ -68,7 +68,7 @@ namespace liekong8
                     car.Left += (int)tmp;
                     tmp -= (float)(int)tmp;
                     showspeed.Text = fspeed.ToString();
-                    g.DrawLine(pen1, car.Left + 55, -fspeed+ (float)256, car.Left+56, -fspeed + (float)256);
+                    g.DrawLine(pen1, car.Left + (float)55, -fspeed+ (float)370, car.Left+ (float)56, -fspeed + (float)370);
                 }              
                 
                 if (car.Location.X > 1107||fspeed<0)
@@ -103,6 +103,7 @@ namespace liekong8
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label4.Text = label7.Text = label8.Text = "0";
             g = panel2.CreateGraphics();
             pen1 = new Pen(Color.Black, 4);
             crh1 = new CRH(pictureBox1,g,pen1,label4);
@@ -119,6 +120,12 @@ namespace liekong8
         private void button3_Click(object sender, EventArgs e)
         {
             crh1.init();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            crh1.jiasudu = (float)50;
+            label7.Text = "50";
         }
     }
 }
