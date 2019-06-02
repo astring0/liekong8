@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.PowerPacks;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,119 +14,193 @@ namespace liekong8
     {
         public Form1()
         {
+           
             InitializeComponent();
         }
-        CRH crh1;
         Graphics g;
         Pen pen1;
-
-        public class CRH
+        int stage = 0;
+        int quduan;
+        float tmp=0,timecost =0,jsd,ts,v0,fsp,jjx,cyx,hjs,jjxzjs, cyxzjs, hjjs;
+        public float jiasudu//加速度
         {
-            public CRH(PictureBox a, Graphics g2, Pen pen2, Label l1)
-            {
-                showspeed = l1;
-                g = g2;
-                pen1 = pen2;
-                car = a;
-                move = new Timer();
-                move.Tick += new EventHandler(movetimer);
-                move.Interval  = 50;
-                speed = (float)1 / (float)move.Interval;
-                init();
-            }
-            public Label showspeed { get; set; }
-            public Graphics g { get; set; }
-            public Pen pen1 { get; set; }
-
-            public Timer move { get; set; }
-            public PictureBox car { get; set; }
-            public Label showjiasudu { get; set; }
-            public Label showtime { get; set; }
-            public Label showm { get; set; }
-            public float speed { get; set; }
-            public float fspeed { get; set; }
-            public float jiasudu {get;set;}
-            private float tmp { get; set; }
-            private float timespend { get; set; }
-            public void init()
-            {
-                car.Location = new Point(0, 38);
-                fspeed = (float)200;
-                jiasudu = (float)20;
-                tmp = timespend=0;
-                
-                
-            }
-            public void movetimer(object sender, EventArgs e)
-            {
-                
-                tmp += fspeed * speed - (float)0.5*jiasudu* speed* speed;
-                fspeed -= speed * jiasudu;
-                timespend += speed;
-                showtime.Text = timespend.ToString();
-                if ((int)tmp>=1)
-                {
-                    car.Left += (int)tmp;
-                    tmp -= (float)(int)tmp;
-                    showspeed.Text = fspeed.ToString();
-                    g.DrawLine(pen1, car.Left + (float)55, -fspeed+ (float)370, car.Left+ (float)56, -fspeed + (float)370);
-                }              
-                
-                if (car.Location.X > 1107||fspeed<0)
-                {
-                    move.Stop();
-                    move.Enabled = false;
-                    showspeed.Text = "0";
-                }
-                
-            }
-            public void kaiche()
-            {
-                showjiasudu.Text = jiasudu.ToString();
-                move.Start();
-                move.Enabled = true;
-            }
-            public void tingche()
-            {
-                move.Stop();
-                move.Enabled = false;
-            }
+            get { return jsd; }
+            set { jsd = value; label7.Text = value.ToString(); }
         }
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        public float timespend//时间间隔
         {
-
+            get { return ts; }
+            set { ts = value;label8.Text = value.ToString(); }
+        }
+        public float V0//初速度
+        {
+            get { return v0; }
+            set { v0 = value; csd.Text = value.ToString(); }
+        }
+        public float fspeed//速度
+        {
+            get { return fsp; }
+            set { fsp = value; label4.Text = value.ToString(); }
+        }
+        public float jjxzsd//紧急限制速度
+        {
+            get { return jjx; }
+            set { jjx = value; showjjxzsd.Text = value.ToString(); }
+        }
+        public float cyxzsd//常用限制速度
+        {
+            get { return cyx; }
+            set { cyx = value; showcyxzsd.Text = value.ToString(); }
+        }
+        public float hjsd//缓解速度
+        {
+            get { return hjs; }
+            set { hjs = value; showhjsd.Text = value.ToString(); }
         }
 
+        
+
+        public float jjxzjsd//紧急限制加速度
+        {
+            get { return jjxzjs; }
+            set { jjxzjs = value; showjjxzjsd.Text = value.ToString(); }
+        }        
+        public float cyxzjsd//常用限制加速度
+        {
+            get { return cyxzjs; }
+            set { cyxzjs = value; showcyxzjsd.Text = value.ToString(); }
+        }
+        public float hjjsd//缓解加速度
+        {
+            get { return hjjs; }
+            set { hjjs = value; showhjjsd.Text = value.ToString(); }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            jjxzjsd = Convert.ToInt16(textBox4.Text);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            cyxzjsd = Convert.ToInt16(textBox5.Text);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            hjjsd = Convert.ToInt16(textBox6.Text);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            hjsd = Convert.ToInt16(textBox3.Text);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            cyxzsd = Convert.ToInt16(textBox2.Text);
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            jjxzsd = Convert.ToInt16(textBox1.Text);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            crh1.tingche();
+            timer1.Stop();
+            timer1.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            label4.Text = label7.Text = label8.Text = "0";
+        {            
+            runtype.SelectedIndex = 1;
             g = panel2.CreateGraphics();
-            pen1 = new Pen(Color.Black, 4);
-            crh1 = new CRH(pictureBox1,g,pen1,label4);
-            crh1.showjiasudu = label7;
-            crh1.showtime = label8;
-            
+            pen1 = new Pen(Color.Black, 4);            
+            init();
+        }
+        public void init()
+        {
+            stage = 0;
+            V0 = 200;
+            jjxzsd = (float)500.0;
+            cyxzsd = (float)300.0;
+            hjsd = (float)200.0;
+            jjxzjsd = (float)50.0;
+            cyxzjsd = (float)30.0;
+            hjjsd = (float)20.0;
+            timer1.Stop();
+            timer1.Enabled = false;
+            label4.Text = label7.Text = label8.Text = "0";
+            crh.Location = new Point(0, 38);
+            timer1.Interval = 100;
+            timecost = (float)1 / (float)timer1.Interval;
+            jiasudu = (float)Convert.ToInt16(showhjjsd.Text);
+            fspeed = (float)Convert.ToInt16(csd.Text);
+            tmp = timespend = 0;
+        }
+
+        private void chusuduclik_Click(object sender, EventArgs e)
+        {
+            V0 = (float)Convert.ToInt16(chusudu.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            crh1.kaiche();
+            
+            fspeed = V0;
+            jiasudu = hjjsd;
+            label7.Text = jiasudu.ToString();
+            quduan = calcquduan();
+            timer1.Start();
+            timer1.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            crh1.init();
+            init();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            crh1.jiasudu = (float)50;
+            jiasudu = (float)50;
             label7.Text = "50";
+        }
+        
+        private void timer1_Tick(object sender, EventArgs e)
+        {   if(crh.Left> 1000-quduan)
+            {
+                tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
+                fspeed -= timecost * jiasudu;
+            }
+            else
+            {
+                tmp += fspeed * timecost;
+            }
+            
+            timespend += timecost;
+            if ((int)tmp >= 1)
+            {
+                crh.Left += (int)tmp;
+                tmp -= (float)(int)tmp;
+                g.DrawLine(pen1, crh.Left + (float)55, -fspeed + (float)360, crh.Left + (float)56, -fspeed + (float)360);
+            }
+
+            if (crh.Location.X > 1107 || fspeed < 0)
+            {
+                timer1.Stop();
+                timer1.Enabled = false;
+                label4.Text = "0";
+            }
+        }
+        private void timer1_Tick2(object sender, EventArgs e)
+        {
+            if (fspeed > jjxzsd){stage = 1;}
+            if (fspeed > cyxzsd && fspeed < jjxzsd){stage = 2;}
+            if (fspeed > hjsd && fspeed < cyxzsd) { stage = 3; }
+            if (fspeed < hjsd) { stage = 4; }
+        }
+        private int calcquduan()
+        {
+            return (int)(fspeed * fspeed / 2 / jiasudu);
         }
     }
 }

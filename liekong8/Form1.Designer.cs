@@ -28,9 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.showhjjsd = new System.Windows.Forms.Label();
+            this.showjjxzjsd = new System.Windows.Forms.Label();
+            this.showcyxzjsd = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.csd = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.showhjsd = new System.Windows.Forms.Label();
+            this.showjjxzsd = new System.Windows.Forms.Label();
+            this.showcyxzsd = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.cyxzsdss = new System.Windows.Forms.Label();
+            this.crh = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -118,6 +133,9 @@
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape75 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape74 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -135,12 +153,38 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.chusudu = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chusuduclik = new System.Windows.Forms.Button();
+            this.runtype = new System.Windows.Forms.ComboBox();
+            this.yindaqi = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crh)).BeginInit();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.yindaqi.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lineShape1
@@ -155,24 +199,164 @@
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.showhjjsd);
+            this.panel1.Controls.Add(this.showjjxzjsd);
+            this.panel1.Controls.Add(this.showcyxzjsd);
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.csd);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.showhjsd);
+            this.panel1.Controls.Add(this.showjjxzsd);
+            this.panel1.Controls.Add(this.showcyxzsd);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.cyxzsdss);
+            this.panel1.Controls.Add(this.crh);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.shapeContainer2);
-            this.panel1.Location = new System.Drawing.Point(0, 79);
+            this.panel1.Location = new System.Drawing.Point(3, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1222, 175);
             this.panel1.TabIndex = 1;
             // 
-            // pictureBox1
+            // showhjjsd
             // 
-            this.pictureBox1.Image = global::liekong8.Properties.Resources.crh1;
-            this.pictureBox1.Location = new System.Drawing.Point(1141, 41);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.showhjjsd.AutoSize = true;
+            this.showhjjsd.Location = new System.Drawing.Point(412, 145);
+            this.showhjjsd.Name = "showhjjsd";
+            this.showhjjsd.Size = new System.Drawing.Size(11, 12);
+            this.showhjjsd.TabIndex = 36;
+            this.showhjjsd.Text = "0";
+            // 
+            // showjjxzjsd
+            // 
+            this.showjjxzjsd.AutoSize = true;
+            this.showjjxzjsd.Location = new System.Drawing.Point(412, 107);
+            this.showjjxzjsd.Name = "showjjxzjsd";
+            this.showjjxzjsd.Size = new System.Drawing.Size(17, 12);
+            this.showjjxzjsd.TabIndex = 34;
+            this.showjjxzjsd.Text = "50";
+            // 
+            // showcyxzjsd
+            // 
+            this.showcyxzjsd.AutoSize = true;
+            this.showcyxzjsd.Location = new System.Drawing.Point(412, 127);
+            this.showcyxzjsd.Name = "showcyxzjsd";
+            this.showcyxzjsd.Size = new System.Drawing.Size(11, 12);
+            this.showcyxzjsd.TabIndex = 35;
+            this.showcyxzjsd.Text = "0";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(320, 145);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 12);
+            this.label26.TabIndex = 33;
+            this.label26.Text = "缓解加速度";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(320, 107);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(89, 12);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "紧急限制加速度";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(320, 127);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(89, 12);
+            this.label28.TabIndex = 32;
+            this.label28.Text = "常用限制加速度";
+            // 
+            // csd
+            // 
+            this.csd.AutoSize = true;
+            this.csd.Location = new System.Drawing.Point(54, 13);
+            this.csd.Name = "csd";
+            this.csd.Size = new System.Drawing.Size(23, 12);
+            this.csd.TabIndex = 28;
+            this.csd.Text = "200";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(9, 13);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 12);
+            this.label18.TabIndex = 23;
+            this.label18.Text = "初速度";
+            // 
+            // showhjsd
+            // 
+            this.showhjsd.AutoSize = true;
+            this.showhjsd.Location = new System.Drawing.Point(268, 145);
+            this.showhjsd.Name = "showhjsd";
+            this.showhjsd.Size = new System.Drawing.Size(11, 12);
+            this.showhjsd.TabIndex = 27;
+            this.showhjsd.Text = "0";
+            // 
+            // showjjxzsd
+            // 
+            this.showjjxzsd.AutoSize = true;
+            this.showjjxzsd.Location = new System.Drawing.Point(268, 107);
+            this.showjjxzsd.Name = "showjjxzsd";
+            this.showjjxzsd.Size = new System.Drawing.Size(11, 12);
+            this.showjjxzsd.TabIndex = 25;
+            this.showjjxzsd.Text = "0";
+            // 
+            // showcyxzsd
+            // 
+            this.showcyxzsd.AutoSize = true;
+            this.showcyxzsd.Location = new System.Drawing.Point(268, 127);
+            this.showcyxzsd.Name = "showcyxzsd";
+            this.showcyxzsd.Size = new System.Drawing.Size(11, 12);
+            this.showcyxzsd.TabIndex = 26;
+            this.showcyxzsd.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(185, 145);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 12);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "缓解速度";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(185, 107);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 12);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "紧急限制速度";
+            // 
+            // cyxzsdss
+            // 
+            this.cyxzsdss.AutoSize = true;
+            this.cyxzsdss.Location = new System.Drawing.Point(185, 127);
+            this.cyxzsdss.Name = "cyxzsdss";
+            this.cyxzsdss.Size = new System.Drawing.Size(77, 12);
+            this.cyxzsdss.TabIndex = 23;
+            this.cyxzsdss.Text = "常用限制速度";
+            // 
+            // crh
+            // 
+            this.crh.Image = global::liekong8.Properties.Resources.crh1;
+            this.crh.Location = new System.Drawing.Point(1141, 41);
+            this.crh.Name = "crh";
+            this.crh.Size = new System.Drawing.Size(64, 33);
+            this.crh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.crh.TabIndex = 3;
+            this.crh.TabStop = false;
             // 
             // label2
             // 
@@ -996,11 +1180,40 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.shapeContainer1);
-            this.panel2.Location = new System.Drawing.Point(3, 340);
+            this.panel2.Location = new System.Drawing.Point(3, 354);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1219, 395);
+            this.panel2.Size = new System.Drawing.Size(1219, 378);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(1154, 319);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 20);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "路程";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Location = new System.Drawing.Point(77, 20);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 20);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "速度";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(9, 150);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 20);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "200";
             // 
             // shapeContainer1
             // 
@@ -1014,7 +1227,7 @@
             this.lineShape72,
             this.lineShape71,
             this.lineShape70});
-            this.shapeContainer1.Size = new System.Drawing.Size(1219, 395);
+            this.shapeContainer1.Size = new System.Drawing.Size(1219, 378);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
@@ -1024,8 +1237,8 @@
             this.lineShape75.Name = "lineShape75";
             this.lineShape75.X1 = 1182;
             this.lineShape75.X2 = 1196;
-            this.lineShape75.Y1 = 351;
-            this.lineShape75.Y2 = 366;
+            this.lineShape75.Y1 = 342;
+            this.lineShape75.Y2 = 357;
             // 
             // lineShape74
             // 
@@ -1033,8 +1246,8 @@
             this.lineShape74.Name = "lineShape74";
             this.lineShape74.X1 = 1197;
             this.lineShape74.X2 = 1183;
-            this.lineShape74.Y1 = 365;
-            this.lineShape74.Y2 = 382;
+            this.lineShape74.Y1 = 356;
+            this.lineShape74.Y2 = 373;
             // 
             // lineShape73
             // 
@@ -1042,8 +1255,8 @@
             this.lineShape73.Name = "lineShape73";
             this.lineShape73.X1 = 56;
             this.lineShape73.X2 = 70;
-            this.lineShape73.Y1 = 25;
-            this.lineShape73.Y2 = 40;
+            this.lineShape73.Y1 = 24;
+            this.lineShape73.Y2 = 39;
             // 
             // lineShape72
             // 
@@ -1051,8 +1264,8 @@
             this.lineShape72.Name = "lineShape72";
             this.lineShape72.X1 = 56;
             this.lineShape72.X2 = 43;
-            this.lineShape72.Y1 = 24;
-            this.lineShape72.Y2 = 41;
+            this.lineShape72.Y1 = 23;
+            this.lineShape72.Y2 = 40;
             // 
             // lineShape71
             // 
@@ -1060,35 +1273,35 @@
             this.lineShape71.Name = "lineShape71";
             this.lineShape71.X1 = 57;
             this.lineShape71.X2 = 1197;
-            this.lineShape71.Y1 = 367;
-            this.lineShape71.Y2 = 367;
+            this.lineShape71.Y1 = 358;
+            this.lineShape71.Y2 = 358;
             // 
             // lineShape70
             // 
             this.lineShape70.BorderWidth = 3;
             this.lineShape70.Name = "lineShape70";
             this.lineShape70.X1 = 56;
-            this.lineShape70.X2 = 56;
-            this.lineShape70.Y1 = 28;
-            this.lineShape70.Y2 = 367;
+            this.lineShape70.X2 = 55;
+            this.lineShape70.Y1 = 26;
+            this.lineShape70.Y2 = 357;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(196, 271);
+            this.button2.Location = new System.Drawing.Point(137, 283);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 35);
+            this.button2.Size = new System.Drawing.Size(128, 35);
             this.button2.TabIndex = 4;
-            this.button2.Text = "发车";
+            this.button2.Text = "开始";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 271);
+            this.button1.Location = new System.Drawing.Point(3, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 35);
             this.button1.TabIndex = 3;
-            this.button1.Text = "停车";
+            this.button1.Text = "暂停";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -1114,9 +1327,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(417, 271);
+            this.button3.Location = new System.Drawing.Point(3, 284);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 35);
+            this.button3.Size = new System.Drawing.Size(128, 35);
             this.button3.TabIndex = 7;
             this.button3.Text = "重置";
             this.button3.UseVisualStyleBackColor = true;
@@ -1126,7 +1339,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(227, 32);
+            this.label5.Location = new System.Drawing.Point(200, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 20);
             this.label5.TabIndex = 8;
@@ -1136,7 +1349,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(472, 32);
+            this.label6.Location = new System.Drawing.Point(387, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 9;
@@ -1146,7 +1359,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(333, 32);
+            this.label7.Location = new System.Drawing.Point(312, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 20);
             this.label7.TabIndex = 10;
@@ -1156,7 +1369,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(560, 32);
+            this.label8.Location = new System.Drawing.Point(482, 32);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 11;
@@ -1164,43 +1377,259 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(604, 271);
+            this.button4.Location = new System.Drawing.Point(137, 242);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 35);
+            this.button4.Size = new System.Drawing.Size(128, 35);
             this.button4.TabIndex = 12;
             this.button4.Text = "紧急制动";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label9
+            // chusudu
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(9, 134);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 20);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "200km/h";
+            this.chusudu.Location = new System.Drawing.Point(6, 14);
+            this.chusudu.Name = "chusudu";
+            this.chusudu.Size = new System.Drawing.Size(106, 21);
+            this.chusudu.TabIndex = 13;
             // 
-            // label10
+            // groupBox1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(73, 21);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 20);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "速度";
+            this.groupBox1.Controls.Add(this.chusuduclik);
+            this.groupBox1.Controls.Add(this.chusudu);
+            this.groupBox1.Location = new System.Drawing.Point(995, 236);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(227, 46);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "初速度设置";
             // 
-            // label11
+            // chusuduclik
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(1155, 324);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 20);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "路程";
+            this.chusuduclik.Location = new System.Drawing.Point(133, 14);
+            this.chusuduclik.Name = "chusuduclik";
+            this.chusuduclik.Size = new System.Drawing.Size(75, 23);
+            this.chusuduclik.TabIndex = 14;
+            this.chusuduclik.Text = "确定";
+            this.chusuduclik.UseVisualStyleBackColor = true;
+            this.chusuduclik.Click += new System.EventHandler(this.chusuduclik_Click);
+            // 
+            // runtype
+            // 
+            this.runtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.runtype.FormattingEnabled = true;
+            this.runtype.Items.AddRange(new object[] {
+            "加速",
+            "正常运行"});
+            this.runtype.Location = new System.Drawing.Point(1084, 292);
+            this.runtype.Name = "runtype";
+            this.runtype.Size = new System.Drawing.Size(116, 20);
+            this.runtype.TabIndex = 15;
+            this.runtype.Tag = "";
+            // 
+            // yindaqi
+            // 
+            this.yindaqi.Controls.Add(this.button7);
+            this.yindaqi.Controls.Add(this.label14);
+            this.yindaqi.Controls.Add(this.textBox3);
+            this.yindaqi.Controls.Add(this.button6);
+            this.yindaqi.Controls.Add(this.label13);
+            this.yindaqi.Controls.Add(this.textBox2);
+            this.yindaqi.Controls.Add(this.button5);
+            this.yindaqi.Controls.Add(this.label12);
+            this.yindaqi.Controls.Add(this.textBox1);
+            this.yindaqi.Location = new System.Drawing.Point(699, 236);
+            this.yindaqi.Name = "yindaqi";
+            this.yindaqi.Size = new System.Drawing.Size(290, 112);
+            this.yindaqi.TabIndex = 16;
+            this.yindaqi.TabStop = false;
+            this.yindaqi.Text = "应答器";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(216, 78);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(68, 23);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "确定";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(18, 88);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 12);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "缓解速度";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(110, 80);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 21);
+            this.textBox3.TabIndex = 19;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(216, 45);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(68, 23);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "确定";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(18, 55);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 12);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "常用限制速度";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(110, 47);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 21);
+            this.textBox2.TabIndex = 16;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(216, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(68, 23);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "确定";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(18, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(77, 12);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "紧急限制速度";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(110, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 0;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(999, 295);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(53, 12);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "速度控制";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button10);
+            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.button9);
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Location = new System.Drawing.Point(375, 244);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(307, 104);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "加速度设置";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(211, 73);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 27;
+            this.button10.Text = "确定";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(93, 73);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(97, 21);
+            this.textBox6.TabIndex = 26;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(212, 43);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 25;
+            this.button9.Text = "确定";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(93, 43);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(98, 21);
+            this.textBox5.TabIndex = 24;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(1, 78);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 12);
+            this.label20.TabIndex = 23;
+            this.label20.Text = "缓解加速度";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(0, 48);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(89, 12);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "常用限制加速度";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(0, 18);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(89, 12);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "紧急限制加速度";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(211, 14);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "确定";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(93, 14);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(97, 21);
+            this.textBox4.TabIndex = 13;
             // 
             // Form1
             // 
@@ -1208,6 +1637,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1225, 734);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.yindaqi);
+            this.Controls.Add(this.runtype);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -1225,9 +1659,15 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.crh)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.yindaqi.ResumeLayout(false);
+            this.yindaqi.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1322,7 +1762,7 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape59;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape58;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape15;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox crh;
         private System.Windows.Forms.Panel panel2;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape70;
@@ -1344,6 +1784,46 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox chusudu;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button chusuduclik;
+        private System.Windows.Forms.ComboBox runtype;
+        private System.Windows.Forms.GroupBox yindaqi;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label csd;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label showhjsd;
+        private System.Windows.Forms.Label showjjxzsd;
+        private System.Windows.Forms.Label showcyxzsd;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label cyxzsdss;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label showhjjsd;
+        private System.Windows.Forms.Label showjjxzjsd;
+        private System.Windows.Forms.Label showcyxzjsd;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 
