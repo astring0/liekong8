@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace liekong8
 {
@@ -17,11 +18,8 @@ namespace liekong8
            
             InitializeComponent();
         }
-        Graphics g;
-        Pen pen1;
-        int stage = 0;
-        int quduan;
-        float tmp=0,timecost =0,jsd,ts,v0,fsp,jjx,cyx,hjs,jjxzjs, cyxzjs, hjjs;
+        int ser = -1;
+        float tmp=0,timecost =0,jsd,ts,v0,fsp,hjs, hjjs;
         public float jiasudu//加速度
         {
             get { return jsd; }
@@ -42,49 +40,16 @@ namespace liekong8
             get { return fsp; }
             set { fsp = value; label4.Text = value.ToString(); }
         }
-        public float jjxzsd//紧急限制速度
-        {
-            get { return jjx; }
-            set { jjx = value; showjjxzsd.Text = value.ToString(); }
-        }
-        public float cyxzsd//常用限制速度
-        {
-            get { return cyx; }
-            set { cyx = value; showcyxzsd.Text = value.ToString(); }
-        }
         public float hjsd//缓解速度
         {
             get { return hjs; }
             set { hjs = value; showhjsd.Text = value.ToString(); }
         }
-
-        
-
-        public float jjxzjsd//紧急限制加速度
-        {
-            get { return jjxzjs; }
-            set { jjxzjs = value; showjjxzjsd.Text = value.ToString(); }
-        }        
-        public float cyxzjsd//常用限制加速度
-        {
-            get { return cyxzjs; }
-            set { cyxzjs = value; showcyxzjsd.Text = value.ToString(); }
-        }
         public float hjjsd//缓解加速度
         {
             get { return hjjs; }
             set { hjjs = value; showhjjsd.Text = value.ToString(); }
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            jjxzjsd = Convert.ToInt16(textBox4.Text);
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            cyxzjsd = Convert.ToInt16(textBox5.Text);
-        }
+        }  
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -94,16 +59,7 @@ namespace liekong8
         private void button7_Click(object sender, EventArgs e)
         {
             hjsd = Convert.ToInt16(textBox3.Text);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            cyxzsd = Convert.ToInt16(textBox2.Text);
-        }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            jjxzsd = Convert.ToInt16(textBox1.Text);
-        }
+        }       
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Stop();
@@ -111,33 +67,49 @@ namespace liekong8
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {            
+        {
+            V0 = 200;
+            hjsd = (float)200.0;
+            hjjsd = (float)120.0;
+            timer1.Interval = 30;
+            timecost = (float)1 / (float)timer1.Interval;
+            jiasudu = (float)Convert.ToInt16(showhjjsd.Text);
+            fspeed = (float)Convert.ToInt16(csd.Text);
             runtype.SelectedIndex = 1;
-            g = panel2.CreateGraphics();
-            pen1 = new Pen(Color.Black, 4);            
             init();
+            grachatinit();
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            chart1.Series.Clear();
+            ser = -1;
+        }
+
         public void init()
         {
-            stage = 0;
-            V0 = 200;
-            jjxzsd = (float)500.0;
-            cyxzsd = (float)300.0;
-            hjsd = (float)200.0;
-            jjxzjsd = (float)50.0;
-            cyxzjsd = (float)30.0;
-            hjjsd = (float)20.0;
             timer1.Stop();
             timer1.Enabled = false;
             label4.Text = label7.Text = label8.Text = "0";
             crh.Location = new Point(0, 38);
-            timer1.Interval = 100;
-            timecost = (float)1 / (float)timer1.Interval;
-            jiasudu = (float)Convert.ToInt16(showhjjsd.Text);
-            fspeed = (float)Convert.ToInt16(csd.Text);
             tmp = timespend = 0;
         }
+        public void grachatinit()
+        {
+            chart1.Titles.Add("s1");
+            chart1.Titles[0].Text = "制动曲线";
+            
+            chart1.Series.Clear();
+            chart1.ChartAreas[0].AxisY.Minimum = 0;
+            chart1.ChartAreas[0].AxisY.Maximum = 400;
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.ChartAreas[0].AxisX.Maximum = 1200;
+            chart1.ChartAreas[0].AxisX.Enabled = AxisEnabled.True;
+            chart1.ChartAreas[0].AxisY.Enabled = AxisEnabled.True;
+            chart1.ChartAreas[0].AxisY.LabelStyle.Enabled = true;
+            chart1.ChartAreas[0].AxisX.LabelStyle.Enabled = true;
 
+        }
         private void chusuduclik_Click(object sender, EventArgs e)
         {
             V0 = (float)Convert.ToInt16(chusudu.Text);
@@ -145,11 +117,13 @@ namespace liekong8
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            chart1.Series.Add((++ser).ToString());
+            chart1.Series[ser].ChartType = SeriesChartType.Line;
+            chart1.Series[ser].BorderWidth = 3;
+            chart1.Series[ser].Name = "实际速度曲线"+ser.ToString()+" "+V0.ToString();
             fspeed = V0;
             jiasudu = hjjsd;
             label7.Text = jiasudu.ToString();
-            quduan = calcquduan();
             timer1.Start();
             timer1.Enabled = true;
         }
@@ -158,30 +132,28 @@ namespace liekong8
         {
             init();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            jiasudu = (float)50;
-            label7.Text = "50";
-        }
         
         private void timer1_Tick(object sender, EventArgs e)
-        {   if(crh.Left> 1000-quduan)
+        {   if(crh.Left> 1000- (int)(fspeed * fspeed / 2 / jiasudu))
             {
                 tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
                 fspeed -= timecost * jiasudu;
+            }
+            else if(fspeed<hjsd && runtype.Text == "加速")
+            {
+                tmp += fspeed * timecost + (float)0.5 * 80 * timecost * timecost;
+                fspeed += timecost * 80;
             }
             else
             {
                 tmp += fspeed * timecost;
             }
-            
+            this.chart1.Series[ser].Points.AddXY(crh.Left, fspeed);
             timespend += timecost;
             if ((int)tmp >= 1)
             {
                 crh.Left += (int)tmp;
-                tmp -= (float)(int)tmp;
-                g.DrawLine(pen1, crh.Left + (float)55, -fspeed + (float)360, crh.Left + (float)56, -fspeed + (float)360);
+                tmp -= (float)(int)tmp;                
             }
 
             if (crh.Location.X > 1107 || fspeed < 0)
@@ -191,16 +163,29 @@ namespace liekong8
                 label4.Text = "0";
             }
         }
-        private void timer1_Tick2(object sender, EventArgs e)
+
+        private void drawanquan(object sender, EventArgs e)
         {
-            if (fspeed > jjxzsd){stage = 1;}
-            if (fspeed > cyxzsd && fspeed < jjxzsd){stage = 2;}
-            if (fspeed > hjsd && fspeed < cyxzsd) { stage = 3; }
-            if (fspeed < hjsd) { stage = 4; }
-        }
-        private int calcquduan()
-        {
-            return (int)(fspeed * fspeed / 2 / jiasudu);
+            int aqu = (int)(hjsd * hjsd / 2 / jiasudu);
+            List<float> anquanx = new List<float>();
+            List<float> anquany = new List<float>();
+            anquanx.Add(0);
+            anquany.Add(hjsd);
+            anquanx.Add(1000 - aqu-1);
+            anquany.Add(hjsd);
+            for (int i = 1000 - aqu; i < 1001; i++)
+            {
+                anquanx.Add(i);
+                anquany.Add((float)Math.Sqrt(-2 * jiasudu * (i - 1000 + aqu) + hjsd * hjsd));
+            }
+            float[] x = anquanx.ToArray();
+            float[] y = anquany.ToArray();
+            chart1.Series.Add((++ser).ToString());
+            chart1.Series[ser].ChartType = SeriesChartType.Line;
+            chart1.Series[ser].BorderWidth = 3;
+            chart1.Series[ser].Points.DataBindXY(x, y);
+            chart1.Series[ser].Name = "允许速度曲线"+ser.ToString()+" "+hjsd.ToString();
+
         }
     }
 }

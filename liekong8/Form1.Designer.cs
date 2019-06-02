@@ -29,22 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
             this.showhjjsd = new System.Windows.Forms.Label();
-            this.showjjxzjsd = new System.Windows.Forms.Label();
-            this.showcyxzjsd = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.csd = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.showhjsd = new System.Windows.Forms.Label();
-            this.showjjxzsd = new System.Windows.Forms.Label();
-            this.showcyxzsd = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cyxzsdss = new System.Windows.Forms.Label();
             this.crh = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -132,17 +127,7 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape75 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape74 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape73 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape72 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape71 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape70 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -161,27 +146,16 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button10 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.crh)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.yindaqi.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -200,19 +174,11 @@
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.showhjjsd);
-            this.panel1.Controls.Add(this.showjjxzjsd);
-            this.panel1.Controls.Add(this.showcyxzjsd);
             this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.csd);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.showhjsd);
-            this.panel1.Controls.Add(this.showjjxzsd);
-            this.panel1.Controls.Add(this.showcyxzsd);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.cyxzsdss);
             this.panel1.Controls.Add(this.crh);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -225,133 +191,67 @@
             // showhjjsd
             // 
             this.showhjjsd.AutoSize = true;
-            this.showhjjsd.Location = new System.Drawing.Point(412, 145);
+            this.showhjjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.showhjjsd.Location = new System.Drawing.Point(482, 96);
             this.showhjjsd.Name = "showhjjsd";
-            this.showhjjsd.Size = new System.Drawing.Size(11, 12);
+            this.showhjjsd.Size = new System.Drawing.Size(19, 20);
             this.showhjjsd.TabIndex = 36;
             this.showhjjsd.Text = "0";
-            // 
-            // showjjxzjsd
-            // 
-            this.showjjxzjsd.AutoSize = true;
-            this.showjjxzjsd.Location = new System.Drawing.Point(412, 107);
-            this.showjjxzjsd.Name = "showjjxzjsd";
-            this.showjjxzjsd.Size = new System.Drawing.Size(17, 12);
-            this.showjjxzjsd.TabIndex = 34;
-            this.showjjxzjsd.Text = "50";
-            // 
-            // showcyxzjsd
-            // 
-            this.showcyxzjsd.AutoSize = true;
-            this.showcyxzjsd.Location = new System.Drawing.Point(412, 127);
-            this.showcyxzjsd.Name = "showcyxzjsd";
-            this.showcyxzjsd.Size = new System.Drawing.Size(11, 12);
-            this.showcyxzjsd.TabIndex = 35;
-            this.showcyxzjsd.Text = "0";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(320, 145);
+            this.label26.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.Location = new System.Drawing.Point(398, 96);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(65, 12);
+            this.label26.Size = new System.Drawing.Size(69, 20);
             this.label26.TabIndex = 33;
-            this.label26.Text = "缓解加速度";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(320, 107);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(89, 12);
-            this.label27.TabIndex = 31;
-            this.label27.Text = "紧急限制加速度";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(320, 127);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(89, 12);
-            this.label28.TabIndex = 32;
-            this.label28.Text = "常用限制加速度";
+            this.label26.Text = "加速度";
             // 
             // csd
             // 
             this.csd.AutoSize = true;
-            this.csd.Location = new System.Drawing.Point(54, 13);
+            this.csd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.csd.Location = new System.Drawing.Point(645, 96);
             this.csd.Name = "csd";
-            this.csd.Size = new System.Drawing.Size(23, 12);
+            this.csd.Size = new System.Drawing.Size(39, 20);
             this.csd.TabIndex = 28;
             this.csd.Text = "200";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(9, 13);
+            this.label18.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.Location = new System.Drawing.Point(561, 96);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 12);
+            this.label18.Size = new System.Drawing.Size(69, 20);
             this.label18.TabIndex = 23;
             this.label18.Text = "初速度";
             // 
             // showhjsd
             // 
             this.showhjsd.AutoSize = true;
-            this.showhjsd.Location = new System.Drawing.Point(268, 145);
+            this.showhjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.showhjsd.Location = new System.Drawing.Point(306, 96);
             this.showhjsd.Name = "showhjsd";
-            this.showhjsd.Size = new System.Drawing.Size(11, 12);
+            this.showhjsd.Size = new System.Drawing.Size(19, 20);
             this.showhjsd.TabIndex = 27;
             this.showhjsd.Text = "0";
-            // 
-            // showjjxzsd
-            // 
-            this.showjjxzsd.AutoSize = true;
-            this.showjjxzsd.Location = new System.Drawing.Point(268, 107);
-            this.showjjxzsd.Name = "showjjxzsd";
-            this.showjjxzsd.Size = new System.Drawing.Size(11, 12);
-            this.showjjxzsd.TabIndex = 25;
-            this.showjjxzsd.Text = "0";
-            // 
-            // showcyxzsd
-            // 
-            this.showcyxzsd.AutoSize = true;
-            this.showcyxzsd.Location = new System.Drawing.Point(268, 127);
-            this.showcyxzsd.Name = "showcyxzsd";
-            this.showcyxzsd.Size = new System.Drawing.Size(11, 12);
-            this.showcyxzsd.TabIndex = 26;
-            this.showcyxzsd.Text = "0";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(185, 145);
+            this.label15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label15.Location = new System.Drawing.Point(209, 96);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 12);
+            this.label15.Size = new System.Drawing.Size(89, 20);
             this.label15.TabIndex = 24;
-            this.label15.Text = "缓解速度";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(185, 107);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 12);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "紧急限制速度";
-            // 
-            // cyxzsdss
-            // 
-            this.cyxzsdss.AutoSize = true;
-            this.cyxzsdss.Location = new System.Drawing.Point(185, 127);
-            this.cyxzsdss.Name = "cyxzsdss";
-            this.cyxzsdss.Size = new System.Drawing.Size(77, 12);
-            this.cyxzsdss.TabIndex = 23;
-            this.cyxzsdss.Text = "常用限制速度";
+            this.label15.Text = "限制速度";
             // 
             // crh
             // 
             this.crh.Image = global::liekong8.Properties.Resources.crh1;
-            this.crh.Location = new System.Drawing.Point(1141, 41);
+            this.crh.Location = new System.Drawing.Point(864, 49);
             this.crh.Name = "crh";
             this.crh.Size = new System.Drawing.Size(64, 33);
             this.crh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1174,120 +1074,39 @@
             this.lineShape2.Y1 = 63;
             this.lineShape2.Y2 = 80;
             // 
-            // panel2
+            // chart1
             // 
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.shapeContainer1);
-            this.panel2.Location = new System.Drawing.Point(3, 354);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1219, 378);
-            this.panel2.TabIndex = 2;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(1154, 319);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 20);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "路程";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(77, 20);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 20);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "速度";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(9, 150);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 20);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "200";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape75,
-            this.lineShape74,
-            this.lineShape73,
-            this.lineShape72,
-            this.lineShape71,
-            this.lineShape70});
-            this.shapeContainer1.Size = new System.Drawing.Size(1219, 378);
-            this.shapeContainer1.TabIndex = 0;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape75
-            // 
-            this.lineShape75.BorderWidth = 3;
-            this.lineShape75.Name = "lineShape75";
-            this.lineShape75.X1 = 1182;
-            this.lineShape75.X2 = 1196;
-            this.lineShape75.Y1 = 342;
-            this.lineShape75.Y2 = 357;
-            // 
-            // lineShape74
-            // 
-            this.lineShape74.BorderWidth = 3;
-            this.lineShape74.Name = "lineShape74";
-            this.lineShape74.X1 = 1197;
-            this.lineShape74.X2 = 1183;
-            this.lineShape74.Y1 = 356;
-            this.lineShape74.Y2 = 373;
-            // 
-            // lineShape73
-            // 
-            this.lineShape73.BorderWidth = 3;
-            this.lineShape73.Name = "lineShape73";
-            this.lineShape73.X1 = 56;
-            this.lineShape73.X2 = 70;
-            this.lineShape73.Y1 = 24;
-            this.lineShape73.Y2 = 39;
-            // 
-            // lineShape72
-            // 
-            this.lineShape72.BorderWidth = 3;
-            this.lineShape72.Name = "lineShape72";
-            this.lineShape72.X1 = 56;
-            this.lineShape72.X2 = 43;
-            this.lineShape72.Y1 = 23;
-            this.lineShape72.Y2 = 40;
-            // 
-            // lineShape71
-            // 
-            this.lineShape71.BorderWidth = 3;
-            this.lineShape71.Name = "lineShape71";
-            this.lineShape71.X1 = 57;
-            this.lineShape71.X2 = 1197;
-            this.lineShape71.Y1 = 358;
-            this.lineShape71.Y2 = 358;
-            // 
-            // lineShape70
-            // 
-            this.lineShape70.BorderWidth = 3;
-            this.lineShape70.Name = "lineShape70";
-            this.lineShape70.X1 = 56;
-            this.lineShape70.X2 = 55;
-            this.lineShape70.Y1 = 26;
-            this.lineShape70.Y2 = 357;
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisX.Interval = 50D;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea1.AxisX.Maximum = 1200D;
+            chartArea1.AxisX.Minimum = 0D;
+            chartArea1.AxisX.Title = "路程";
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisY.Interval = 50D;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea1.AxisY.Maximum = 400D;
+            chartArea1.AxisY.Minimum = 0D;
+            chartArea1.AxisY.Title = "速度";
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(-38, 357);
+            this.chart1.Name = "chart1";
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "s";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(1492, 374);
+            this.chart1.TabIndex = 23;
+            this.chart1.Text = "chart1";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(137, 283);
+            this.button2.Location = new System.Drawing.Point(137, 302);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 35);
             this.button2.TabIndex = 4;
@@ -1327,7 +1146,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 284);
+            this.button3.Location = new System.Drawing.Point(3, 303);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 35);
             this.button3.TabIndex = 7;
@@ -1381,9 +1200,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 35);
             this.button4.TabIndex = 12;
-            this.button4.Text = "紧急制动";
+            this.button4.Text = "绘制安全曲线";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.drawanquan);
             // 
             // chusudu
             // 
@@ -1396,7 +1215,7 @@
             // 
             this.groupBox1.Controls.Add(this.chusuduclik);
             this.groupBox1.Controls.Add(this.chusudu);
-            this.groupBox1.Location = new System.Drawing.Point(995, 236);
+            this.groupBox1.Location = new System.Drawing.Point(1051, 250);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(227, 46);
             this.groupBox1.TabIndex = 14;
@@ -1420,7 +1239,7 @@
             this.runtype.Items.AddRange(new object[] {
             "加速",
             "正常运行"});
-            this.runtype.Location = new System.Drawing.Point(1084, 292);
+            this.runtype.Location = new System.Drawing.Point(1140, 306);
             this.runtype.Name = "runtype";
             this.runtype.Size = new System.Drawing.Size(116, 20);
             this.runtype.TabIndex = 15;
@@ -1431,22 +1250,16 @@
             this.yindaqi.Controls.Add(this.button7);
             this.yindaqi.Controls.Add(this.label14);
             this.yindaqi.Controls.Add(this.textBox3);
-            this.yindaqi.Controls.Add(this.button6);
-            this.yindaqi.Controls.Add(this.label13);
-            this.yindaqi.Controls.Add(this.textBox2);
-            this.yindaqi.Controls.Add(this.button5);
-            this.yindaqi.Controls.Add(this.label12);
-            this.yindaqi.Controls.Add(this.textBox1);
-            this.yindaqi.Location = new System.Drawing.Point(699, 236);
+            this.yindaqi.Location = new System.Drawing.Point(733, 236);
             this.yindaqi.Name = "yindaqi";
-            this.yindaqi.Size = new System.Drawing.Size(290, 112);
+            this.yindaqi.Size = new System.Drawing.Size(290, 60);
             this.yindaqi.TabIndex = 16;
             this.yindaqi.TabStop = false;
             this.yindaqi.Text = "应答器";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(216, 78);
+            this.button7.Location = new System.Drawing.Point(211, 26);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(68, 23);
             this.button7.TabIndex = 21;
@@ -1457,75 +1270,23 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(18, 88);
+            this.label14.Location = new System.Drawing.Point(13, 36);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 12);
             this.label14.TabIndex = 20;
-            this.label14.Text = "缓解速度";
+            this.label14.Text = "限制速度";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 80);
+            this.textBox3.Location = new System.Drawing.Point(105, 28);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 21);
             this.textBox3.TabIndex = 19;
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(216, 45);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(68, 23);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "确定";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(18, 55);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 12);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "常用限制速度";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(110, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 16;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(216, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(68, 23);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "确定";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(18, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 12);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "紧急限制速度";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(110, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 0;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(999, 295);
+            this.label16.Location = new System.Drawing.Point(1055, 309);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 12);
             this.label16.TabIndex = 22;
@@ -1539,23 +1300,17 @@
             // 
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(375, 244);
+            this.groupBox2.Location = new System.Drawing.Point(405, 244);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(307, 104);
+            this.groupBox2.Size = new System.Drawing.Size(307, 52);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "加速度设置";
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(211, 73);
+            this.button10.Location = new System.Drawing.Point(226, 17);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 27;
@@ -1565,78 +1320,38 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(93, 73);
+            this.textBox6.Location = new System.Drawing.Point(108, 17);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(97, 21);
             this.textBox6.TabIndex = 26;
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(212, 43);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "确定";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(93, 43);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(98, 21);
-            this.textBox5.TabIndex = 24;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(1, 78);
+            this.label20.Location = new System.Drawing.Point(16, 22);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 12);
+            this.label20.Size = new System.Drawing.Size(41, 12);
             this.label20.TabIndex = 23;
-            this.label20.Text = "缓解加速度";
+            this.label20.Text = "加速度";
             // 
-            // label21
+            // button5
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(0, 48);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(89, 12);
-            this.label21.TabIndex = 22;
-            this.label21.Text = "常用限制加速度";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(0, 18);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 12);
-            this.label22.TabIndex = 21;
-            this.label22.Text = "紧急限制加速度";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(211, 14);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "确定";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(93, 14);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 21);
-            this.textBox4.TabIndex = 13;
+            this.button5.Location = new System.Drawing.Point(271, 242);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(128, 35);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "清空曲线";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1225, 734);
+            this.ClientSize = new System.Drawing.Size(1463, 734);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.yindaqi);
@@ -1651,7 +1366,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -1660,8 +1374,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.crh)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.yindaqi.ResumeLayout(false);
@@ -1763,16 +1476,8 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape58;
         private Microsoft.VisualBasic.PowerPacks.OvalShape ovalShape15;
         private System.Windows.Forms.PictureBox crh;
-        private System.Windows.Forms.Panel panel2;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape70;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape75;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape74;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape73;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape72;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape71;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
@@ -1781,49 +1486,28 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox chusudu;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button chusuduclik;
         private System.Windows.Forms.ComboBox runtype;
         private System.Windows.Forms.GroupBox yindaqi;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label csd;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label showhjsd;
-        private System.Windows.Forms.Label showjjxzsd;
-        private System.Windows.Forms.Label showcyxzsd;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label cyxzsdss;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label showhjjsd;
-        private System.Windows.Forms.Label showjjxzjsd;
-        private System.Windows.Forms.Label showcyxzjsd;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button button5;
     }
 }
 
