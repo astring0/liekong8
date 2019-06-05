@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
             this.showhjjsd = new System.Windows.Forms.Label();
@@ -153,6 +153,18 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.crh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -173,26 +185,32 @@
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.showhjjsd);
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.csd);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.showhjsd);
-            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.button19);
+            this.panel1.Controls.Add(this.button18);
+            this.panel1.Controls.Add(this.button17);
+            this.panel1.Controls.Add(this.button16);
+            this.panel1.Controls.Add(this.button15);
+            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.crh);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.shapeContainer2);
             this.panel1.Location = new System.Drawing.Point(3, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1222, 175);
+            this.panel1.Size = new System.Drawing.Size(1220, 316);
             this.panel1.TabIndex = 1;
             // 
             // showhjjsd
             // 
             this.showhjjsd.AutoSize = true;
             this.showhjjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.showhjjsd.Location = new System.Drawing.Point(482, 96);
+            this.showhjjsd.Location = new System.Drawing.Point(1383, 69);
             this.showhjjsd.Name = "showhjjsd";
             this.showhjjsd.Size = new System.Drawing.Size(19, 20);
             this.showhjjsd.TabIndex = 36;
@@ -202,7 +220,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(398, 96);
+            this.label26.Location = new System.Drawing.Point(1286, 69);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(69, 20);
             this.label26.TabIndex = 33;
@@ -212,7 +230,7 @@
             // 
             this.csd.AutoSize = true;
             this.csd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.csd.Location = new System.Drawing.Point(645, 96);
+            this.csd.Location = new System.Drawing.Point(1379, 32);
             this.csd.Name = "csd";
             this.csd.Size = new System.Drawing.Size(39, 20);
             this.csd.TabIndex = 28;
@@ -222,7 +240,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(561, 96);
+            this.label18.Location = new System.Drawing.Point(1286, 32);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(69, 20);
             this.label18.TabIndex = 23;
@@ -232,7 +250,7 @@
             // 
             this.showhjsd.AutoSize = true;
             this.showhjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.showhjsd.Location = new System.Drawing.Point(306, 96);
+            this.showhjsd.Location = new System.Drawing.Point(1383, 109);
             this.showhjsd.Name = "showhjsd";
             this.showhjsd.Size = new System.Drawing.Size(19, 20);
             this.showhjsd.TabIndex = 27;
@@ -242,7 +260,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(209, 96);
+            this.label15.Location = new System.Drawing.Point(1286, 109);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 20);
             this.label15.TabIndex = 24;
@@ -251,7 +269,7 @@
             // crh
             // 
             this.crh.Image = global::liekong8.Properties.Resources.crh1;
-            this.crh.Location = new System.Drawing.Point(864, 49);
+            this.crh.Location = new System.Drawing.Point(947, 39);
             this.crh.Name = "crh";
             this.crh.Size = new System.Drawing.Size(64, 33);
             this.crh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +280,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(950, 130);
+            this.label2.Location = new System.Drawing.Point(943, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(159, 20);
             this.label2.TabIndex = 2;
@@ -272,7 +290,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(25, 130);
+            this.label1.Location = new System.Drawing.Point(18, 200);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 20);
             this.label1.TabIndex = 1;
@@ -368,7 +386,7 @@
             this.lineShape4,
             this.lineShape3,
             this.lineShape2});
-            this.shapeContainer2.Size = new System.Drawing.Size(1222, 175);
+            this.shapeContainer2.Size = new System.Drawing.Size(1220, 316);
             this.shapeContainer2.TabIndex = 0;
             this.shapeContainer2.TabStop = false;
             // 
@@ -378,8 +396,8 @@
             this.lineShape69.Name = "lineShape69";
             this.lineShape69.X1 = 997;
             this.lineShape69.X2 = 987;
-            this.lineShape69.Y1 = 88;
-            this.lineShape69.Y2 = 106;
+            this.lineShape69.Y1 = 159;
+            this.lineShape69.Y2 = 177;
             // 
             // lineShape68
             // 
@@ -387,8 +405,8 @@
             this.lineShape68.Name = "lineShape68";
             this.lineShape68.X1 = 998;
             this.lineShape68.X2 = 1008;
-            this.lineShape68.Y1 = 88;
-            this.lineShape68.Y2 = 105;
+            this.lineShape68.Y1 = 159;
+            this.lineShape68.Y2 = 176;
             // 
             // lineShape67
             // 
@@ -396,8 +414,8 @@
             this.lineShape67.Name = "lineShape67";
             this.lineShape67.X1 = 987;
             this.lineShape67.X2 = 1007;
-            this.lineShape67.Y1 = 106;
-            this.lineShape67.Y2 = 106;
+            this.lineShape67.Y1 = 177;
+            this.lineShape67.Y2 = 177;
             // 
             // lineShape66
             // 
@@ -405,8 +423,8 @@
             this.lineShape66.Name = "lineShape66";
             this.lineShape66.X1 = 997;
             this.lineShape66.X2 = 997;
-            this.lineShape66.Y1 = 106;
-            this.lineShape66.Y2 = 121;
+            this.lineShape66.Y1 = 177;
+            this.lineShape66.Y2 = 192;
             // 
             // lineShape65
             // 
@@ -414,8 +432,8 @@
             this.lineShape65.Name = "lineShape65";
             this.lineShape65.X1 = 66;
             this.lineShape65.X2 = 66;
-            this.lineShape65.Y1 = 107;
-            this.lineShape65.Y2 = 122;
+            this.lineShape65.Y1 = 178;
+            this.lineShape65.Y2 = 193;
             // 
             // lineShape64
             // 
@@ -423,8 +441,8 @@
             this.lineShape64.Name = "lineShape64";
             this.lineShape64.X1 = 56;
             this.lineShape64.X2 = 76;
-            this.lineShape64.Y1 = 107;
-            this.lineShape64.Y2 = 107;
+            this.lineShape64.Y1 = 178;
+            this.lineShape64.Y2 = 178;
             // 
             // lineShape63
             // 
@@ -432,8 +450,8 @@
             this.lineShape63.Name = "lineShape63";
             this.lineShape63.X1 = 67;
             this.lineShape63.X2 = 77;
-            this.lineShape63.Y1 = 89;
-            this.lineShape63.Y2 = 106;
+            this.lineShape63.Y1 = 160;
+            this.lineShape63.Y2 = 177;
             // 
             // lineShape62
             // 
@@ -441,8 +459,8 @@
             this.lineShape62.Name = "lineShape62";
             this.lineShape62.X1 = 66;
             this.lineShape62.X2 = 56;
-            this.lineShape62.Y1 = 89;
-            this.lineShape62.Y2 = 107;
+            this.lineShape62.Y1 = 160;
+            this.lineShape62.Y2 = 178;
             // 
             // lineShape61
             // 
@@ -1076,37 +1094,37 @@
             // 
             // chart1
             // 
-            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea1.AxisX.Interval = 50D;
-            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea1.AxisX.Maximum = 1200D;
-            chartArea1.AxisX.Minimum = 0D;
-            chartArea1.AxisX.Title = "路程";
-            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea1.AxisY.Interval = 50D;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea1.AxisY.Maximum = 400D;
-            chartArea1.AxisY.Minimum = 0D;
-            chartArea1.AxisY.Title = "速度";
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(-38, 357);
+            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea2.AxisX.Interval = 50D;
+            chartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea2.AxisX.Maximum = 1200D;
+            chartArea2.AxisX.Minimum = 0D;
+            chartArea2.AxisX.Title = "路程";
+            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea2.AxisY.Interval = 50D;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea2.AxisY.Maximum = 400D;
+            chartArea2.AxisY.Minimum = 0D;
+            chartArea2.AxisY.Title = "速度";
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(-23, 499);
             this.chart1.Name = "chart1";
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "s";
-            this.chart1.Series.Add(series1);
+            series2.BorderWidth = 3;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "s";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(1492, 374);
             this.chart1.TabIndex = 23;
             this.chart1.Text = "chart1";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(137, 302);
+            this.button2.Location = new System.Drawing.Point(152, 443);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 35);
             this.button2.TabIndex = 4;
@@ -1116,7 +1134,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 242);
+            this.button1.Location = new System.Drawing.Point(18, 383);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 35);
             this.button1.TabIndex = 3;
@@ -1146,7 +1164,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 303);
+            this.button3.Location = new System.Drawing.Point(18, 444);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 35);
             this.button3.TabIndex = 7;
@@ -1196,7 +1214,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(137, 242);
+            this.button4.Location = new System.Drawing.Point(152, 383);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 35);
             this.button4.TabIndex = 12;
@@ -1215,7 +1233,7 @@
             // 
             this.groupBox1.Controls.Add(this.chusuduclik);
             this.groupBox1.Controls.Add(this.chusudu);
-            this.groupBox1.Location = new System.Drawing.Point(1051, 250);
+            this.groupBox1.Location = new System.Drawing.Point(1066, 391);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(227, 46);
             this.groupBox1.TabIndex = 14;
@@ -1239,7 +1257,7 @@
             this.runtype.Items.AddRange(new object[] {
             "加速",
             "正常运行"});
-            this.runtype.Location = new System.Drawing.Point(1140, 306);
+            this.runtype.Location = new System.Drawing.Point(1155, 447);
             this.runtype.Name = "runtype";
             this.runtype.Size = new System.Drawing.Size(116, 20);
             this.runtype.TabIndex = 15;
@@ -1250,7 +1268,7 @@
             this.yindaqi.Controls.Add(this.button7);
             this.yindaqi.Controls.Add(this.label14);
             this.yindaqi.Controls.Add(this.textBox3);
-            this.yindaqi.Location = new System.Drawing.Point(733, 236);
+            this.yindaqi.Location = new System.Drawing.Point(748, 377);
             this.yindaqi.Name = "yindaqi";
             this.yindaqi.Size = new System.Drawing.Size(290, 60);
             this.yindaqi.TabIndex = 16;
@@ -1286,7 +1304,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(1055, 309);
+            this.label16.Location = new System.Drawing.Point(1070, 450);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 12);
             this.label16.TabIndex = 22;
@@ -1301,7 +1319,7 @@
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Location = new System.Drawing.Point(405, 244);
+            this.groupBox2.Location = new System.Drawing.Point(420, 385);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(307, 52);
             this.groupBox2.TabIndex = 15;
@@ -1336,7 +1354,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(271, 242);
+            this.button5.Location = new System.Drawing.Point(286, 383);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(128, 35);
             this.button5.TabIndex = 24;
@@ -1344,15 +1362,173 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button6.Location = new System.Drawing.Point(1020, 100);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(87, 30);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "B";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Red;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button8.Location = new System.Drawing.Point(933, 100);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(87, 30);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "HU";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Yellow;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button9.Location = new System.Drawing.Point(837, 100);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(96, 30);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "LU";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button11.Location = new System.Drawing.Point(743, 100);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(97, 30);
+            this.button11.TabIndex = 7;
+            this.button11.Text = "L";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Lime;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button12.Location = new System.Drawing.Point(650, 100);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(93, 30);
+            this.button12.TabIndex = 8;
+            this.button12.Text = "L1";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button13.Location = new System.Drawing.Point(553, 100);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(97, 30);
+            this.button13.TabIndex = 9;
+            this.button13.Text = "L2";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Green;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button14.Location = new System.Drawing.Point(459, 100);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(97, 30);
+            this.button14.TabIndex = 10;
+            this.button14.Text = "L3";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button15.Location = new System.Drawing.Point(368, 100);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(97, 30);
+            this.button15.TabIndex = 11;
+            this.button15.Text = "L4";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button16.Location = new System.Drawing.Point(275, 100);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(97, 30);
+            this.button16.TabIndex = 12;
+            this.button16.Text = "L5";
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(180, 100);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(97, 30);
+            this.button17.TabIndex = 13;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Location = new System.Drawing.Point(90, 100);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(97, 30);
+            this.button18.TabIndex = 14;
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Red;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button19.Location = new System.Drawing.Point(1107, 100);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(74, 30);
+            this.button19.TabIndex = 15;
+            this.button19.Text = "HU";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1463, 734);
+            this.ClientSize = new System.Drawing.Size(1466, 885);
+            this.Controls.Add(this.showhjsd);
+            this.Controls.Add(this.showhjjsd);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.button5);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.chart1);
+            this.Controls.Add(this.csd);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.yindaqi);
             this.Controls.Add(this.runtype);
@@ -1369,7 +1545,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ATP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1508,6 +1685,18 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button6;
     }
 }
 

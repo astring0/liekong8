@@ -97,8 +97,7 @@ namespace liekong8
         public void grachatinit()
         {
             chart1.Titles.Add("s1");
-            chart1.Titles[0].Text = "制动曲线";
-            
+            chart1.Titles[0].Text = "制动曲线";            
             chart1.Series.Clear();
             chart1.ChartAreas[0].AxisY.Minimum = 0;
             chart1.ChartAreas[0].AxisY.Maximum = 400;
@@ -134,7 +133,7 @@ namespace liekong8
         }
         
         private void timer1_Tick(object sender, EventArgs e)
-        {   if(crh.Left> 1000- (int)(fspeed * fspeed / 2 / jiasudu))
+        {   if(crh.Left> 947 - (int)(fspeed * fspeed / 2 / jiasudu))
             {
                 tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
                 fspeed -= timecost * jiasudu;
@@ -156,7 +155,7 @@ namespace liekong8
                 tmp -= (float)(int)tmp;                
             }
 
-            if (crh.Location.X > 1107 || fspeed < 0)
+            if (crh.Location.X > 950 || fspeed < 0)
             {
                 timer1.Stop();
                 timer1.Enabled = false;
@@ -171,12 +170,12 @@ namespace liekong8
             List<float> anquany = new List<float>();
             anquanx.Add(0);
             anquany.Add(hjsd);
-            anquanx.Add(1000 - aqu-1);
+            anquanx.Add(947 - aqu-1);
             anquany.Add(hjsd);
-            for (int i = 1000 - aqu; i < 1001; i++)
+            for (int i = 947 - aqu; i < 1001; i++)
             {
                 anquanx.Add(i);
-                anquany.Add((float)Math.Sqrt(-2 * jiasudu * (i - 1000 + aqu) + hjsd * hjsd));
+                anquany.Add((float)Math.Sqrt(-2 * jiasudu * (i - 947 + aqu) + hjsd * hjsd));
             }
             float[] x = anquanx.ToArray();
             float[] y = anquany.ToArray();
