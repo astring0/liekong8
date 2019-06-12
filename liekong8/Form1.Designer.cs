@@ -29,17 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.showhjjsd = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.csd = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.showhjsd = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.L12 = new System.Windows.Forms.Button();
+            this.L1 = new System.Windows.Forms.Button();
+            this.L2 = new System.Windows.Forms.Button();
+            this.L3 = new System.Windows.Forms.Button();
+            this.L4 = new System.Windows.Forms.Button();
+            this.L5 = new System.Windows.Forms.Button();
+            this.L6 = new System.Windows.Forms.Button();
+            this.L7 = new System.Windows.Forms.Button();
+            this.L8 = new System.Windows.Forms.Button();
+            this.L9 = new System.Windows.Forms.Button();
+            this.L10 = new System.Windows.Forms.Button();
+            this.L11 = new System.Windows.Forms.Button();
             this.crh = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -127,6 +133,12 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.showhjjsd = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.csd = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.showhjsd = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -153,18 +165,7 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.L13 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.crh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -185,18 +186,18 @@
             // panel1
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.button19);
-            this.panel1.Controls.Add(this.button18);
-            this.panel1.Controls.Add(this.button17);
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.L12);
+            this.panel1.Controls.Add(this.L1);
+            this.panel1.Controls.Add(this.L2);
+            this.panel1.Controls.Add(this.L3);
+            this.panel1.Controls.Add(this.L4);
+            this.panel1.Controls.Add(this.L5);
+            this.panel1.Controls.Add(this.L6);
+            this.panel1.Controls.Add(this.L7);
+            this.panel1.Controls.Add(this.L8);
+            this.panel1.Controls.Add(this.L9);
+            this.panel1.Controls.Add(this.L10);
+            this.panel1.Controls.Add(this.L11);
             this.panel1.Controls.Add(this.crh);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -206,70 +207,176 @@
             this.panel1.Size = new System.Drawing.Size(1220, 316);
             this.panel1.TabIndex = 1;
             // 
-            // showhjjsd
+            // L12
             // 
-            this.showhjjsd.AutoSize = true;
-            this.showhjjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.showhjjsd.Location = new System.Drawing.Point(1383, 69);
-            this.showhjjsd.Name = "showhjjsd";
-            this.showhjjsd.Size = new System.Drawing.Size(19, 20);
-            this.showhjjsd.TabIndex = 36;
-            this.showhjjsd.Text = "0";
+            this.L12.BackColor = System.Drawing.Color.Red;
+            this.L12.Enabled = false;
+            this.L12.FlatAppearance.BorderSize = 0;
+            this.L12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L12.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L12.Location = new System.Drawing.Point(1107, 100);
+            this.L12.Name = "L12";
+            this.L12.Size = new System.Drawing.Size(74, 30);
+            this.L12.TabIndex = 15;
+            this.L12.Text = "HU";
+            this.L12.UseVisualStyleBackColor = false;
             // 
-            // label26
+            // L1
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(1286, 69);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(69, 20);
-            this.label26.TabIndex = 33;
-            this.label26.Text = "加速度";
+            this.L1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.L1.Enabled = false;
+            this.L1.FlatAppearance.BorderSize = 0;
+            this.L1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L1.Location = new System.Drawing.Point(90, 100);
+            this.L1.Name = "L1";
+            this.L1.Size = new System.Drawing.Size(97, 30);
+            this.L1.TabIndex = 14;
+            this.L1.UseVisualStyleBackColor = false;
             // 
-            // csd
+            // L2
             // 
-            this.csd.AutoSize = true;
-            this.csd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.csd.Location = new System.Drawing.Point(1379, 32);
-            this.csd.Name = "csd";
-            this.csd.Size = new System.Drawing.Size(39, 20);
-            this.csd.TabIndex = 28;
-            this.csd.Text = "200";
+            this.L2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.L2.Enabled = false;
+            this.L2.FlatAppearance.BorderSize = 0;
+            this.L2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L2.Location = new System.Drawing.Point(186, 100);
+            this.L2.Name = "L2";
+            this.L2.Size = new System.Drawing.Size(94, 30);
+            this.L2.TabIndex = 13;
+            this.L2.UseVisualStyleBackColor = false;
             // 
-            // label18
+            // L3
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(1286, 32);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 20);
-            this.label18.TabIndex = 23;
-            this.label18.Text = "初速度";
+            this.L3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.L3.Enabled = false;
+            this.L3.FlatAppearance.BorderSize = 0;
+            this.L3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L3.Location = new System.Drawing.Point(280, 100);
+            this.L3.Name = "L3";
+            this.L3.Size = new System.Drawing.Size(92, 30);
+            this.L3.TabIndex = 12;
+            this.L3.Text = "L5";
+            this.L3.UseVisualStyleBackColor = false;
             // 
-            // showhjsd
+            // L4
             // 
-            this.showhjsd.AutoSize = true;
-            this.showhjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.showhjsd.Location = new System.Drawing.Point(1383, 109);
-            this.showhjsd.Name = "showhjsd";
-            this.showhjsd.Size = new System.Drawing.Size(19, 20);
-            this.showhjsd.TabIndex = 27;
-            this.showhjsd.Text = "0";
+            this.L4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.L4.Enabled = false;
+            this.L4.FlatAppearance.BorderSize = 0;
+            this.L4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L4.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L4.Location = new System.Drawing.Point(372, 100);
+            this.L4.Name = "L4";
+            this.L4.Size = new System.Drawing.Size(93, 30);
+            this.L4.TabIndex = 11;
+            this.L4.Text = "L4";
+            this.L4.UseVisualStyleBackColor = false;
             // 
-            // label15
+            // L5
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(1286, 109);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 20);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "限制速度";
+            this.L5.BackColor = System.Drawing.Color.Green;
+            this.L5.Enabled = false;
+            this.L5.FlatAppearance.BorderSize = 0;
+            this.L5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L5.Location = new System.Drawing.Point(464, 100);
+            this.L5.Name = "L5";
+            this.L5.Size = new System.Drawing.Size(92, 30);
+            this.L5.TabIndex = 10;
+            this.L5.Text = "L3";
+            this.L5.UseVisualStyleBackColor = false;
+            // 
+            // L6
+            // 
+            this.L6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.L6.Enabled = false;
+            this.L6.FlatAppearance.BorderSize = 0;
+            this.L6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L6.Location = new System.Drawing.Point(555, 100);
+            this.L6.Name = "L6";
+            this.L6.Size = new System.Drawing.Size(95, 30);
+            this.L6.TabIndex = 9;
+            this.L6.Text = "L2";
+            this.L6.UseVisualStyleBackColor = false;
+            // 
+            // L7
+            // 
+            this.L7.BackColor = System.Drawing.Color.Lime;
+            this.L7.Enabled = false;
+            this.L7.FlatAppearance.BorderSize = 0;
+            this.L7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L7.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L7.Location = new System.Drawing.Point(649, 100);
+            this.L7.Name = "L7";
+            this.L7.Size = new System.Drawing.Size(94, 30);
+            this.L7.TabIndex = 8;
+            this.L7.Text = "L1";
+            this.L7.UseVisualStyleBackColor = false;
+            // 
+            // L8
+            // 
+            this.L8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.L8.Enabled = false;
+            this.L8.FlatAppearance.BorderSize = 0;
+            this.L8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L8.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L8.Location = new System.Drawing.Point(743, 100);
+            this.L8.Name = "L8";
+            this.L8.Size = new System.Drawing.Size(97, 30);
+            this.L8.TabIndex = 7;
+            this.L8.Text = "L";
+            this.L8.UseVisualStyleBackColor = false;
+            // 
+            // L9
+            // 
+            this.L9.BackColor = System.Drawing.Color.Yellow;
+            this.L9.Enabled = false;
+            this.L9.FlatAppearance.BorderSize = 0;
+            this.L9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L9.Location = new System.Drawing.Point(837, 100);
+            this.L9.Name = "L9";
+            this.L9.Size = new System.Drawing.Size(96, 30);
+            this.L9.TabIndex = 6;
+            this.L9.Text = "LU";
+            this.L9.UseVisualStyleBackColor = false;
+            // 
+            // L10
+            // 
+            this.L10.BackColor = System.Drawing.Color.Red;
+            this.L10.Enabled = false;
+            this.L10.FlatAppearance.BorderSize = 0;
+            this.L10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L10.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L10.Location = new System.Drawing.Point(933, 100);
+            this.L10.Name = "L10";
+            this.L10.Size = new System.Drawing.Size(87, 30);
+            this.L10.TabIndex = 5;
+            this.L10.Text = "HU";
+            this.L10.UseVisualStyleBackColor = false;
+            // 
+            // L11
+            // 
+            this.L11.BackColor = System.Drawing.Color.White;
+            this.L11.Enabled = false;
+            this.L11.FlatAppearance.BorderSize = 0;
+            this.L11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.L11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.L11.Location = new System.Drawing.Point(1020, 100);
+            this.L11.Name = "L11";
+            this.L11.Size = new System.Drawing.Size(87, 30);
+            this.L11.TabIndex = 4;
+            this.L11.Text = "B";
+            this.L11.UseVisualStyleBackColor = false;
             // 
             // crh
             // 
             this.crh.Image = global::liekong8.Properties.Resources.crh1;
-            this.crh.Location = new System.Drawing.Point(947, 39);
+            this.crh.Location = new System.Drawing.Point(1111, 39);
             this.crh.Name = "crh";
             this.crh.Size = new System.Drawing.Size(64, 33);
             this.crh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1092,32 +1199,92 @@
             this.lineShape2.Y1 = 63;
             this.lineShape2.Y2 = 80;
             // 
+            // showhjjsd
+            // 
+            this.showhjjsd.AutoSize = true;
+            this.showhjjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.showhjjsd.Location = new System.Drawing.Point(1383, 69);
+            this.showhjjsd.Name = "showhjjsd";
+            this.showhjjsd.Size = new System.Drawing.Size(19, 20);
+            this.showhjjsd.TabIndex = 36;
+            this.showhjjsd.Text = "0";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.Location = new System.Drawing.Point(1286, 69);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(69, 20);
+            this.label26.TabIndex = 33;
+            this.label26.Text = "加速度";
+            // 
+            // csd
+            // 
+            this.csd.AutoSize = true;
+            this.csd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.csd.Location = new System.Drawing.Point(1379, 32);
+            this.csd.Name = "csd";
+            this.csd.Size = new System.Drawing.Size(39, 20);
+            this.csd.TabIndex = 28;
+            this.csd.Text = "200";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.Location = new System.Drawing.Point(1286, 32);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(69, 20);
+            this.label18.TabIndex = 23;
+            this.label18.Text = "初速度";
+            // 
+            // showhjsd
+            // 
+            this.showhjsd.AutoSize = true;
+            this.showhjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.showhjsd.Location = new System.Drawing.Point(1383, 109);
+            this.showhjsd.Name = "showhjsd";
+            this.showhjsd.Size = new System.Drawing.Size(19, 20);
+            this.showhjsd.TabIndex = 27;
+            this.showhjsd.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label15.Location = new System.Drawing.Point(1286, 109);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 20);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "限制速度";
+            // 
             // chart1
             // 
-            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea2.AxisX.Interval = 50D;
-            chartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea2.AxisX.Maximum = 1200D;
-            chartArea2.AxisX.Minimum = 0D;
-            chartArea2.AxisX.Title = "路程";
-            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea2.AxisY.Interval = 50D;
-            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea2.AxisY.Maximum = 400D;
-            chartArea2.AxisY.Minimum = 0D;
-            chartArea2.AxisY.Title = "速度";
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisX.Interval = 500D;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea1.AxisX.Maximum = 12000D;
+            chartArea1.AxisX.Minimum = 0D;
+            chartArea1.AxisX.Title = "路程";
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea1.AxisY.Interval = 50D;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea1.AxisY.Maximum = 400D;
+            chartArea1.AxisY.Minimum = 0D;
+            chartArea1.AxisY.Title = "速度";
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(-23, 499);
             this.chart1.Name = "chart1";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "s";
-            this.chart1.Series.Add(series2);
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "s";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(1492, 374);
             this.chart1.TabIndex = 23;
             this.chart1.Text = "chart1";
@@ -1362,157 +1529,15 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // button6
+            // L13
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(1020, 100);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(87, 30);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "B";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(933, 100);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(87, 30);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "HU";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Yellow;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button9.Location = new System.Drawing.Point(837, 100);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(96, 30);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "LU";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button11.Location = new System.Drawing.Point(743, 100);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(97, 30);
-            this.button11.TabIndex = 7;
-            this.button11.Text = "L";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.Lime;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button12.Location = new System.Drawing.Point(650, 100);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(93, 30);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "L1";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button13.Location = new System.Drawing.Point(553, 100);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(97, 30);
-            this.button13.TabIndex = 9;
-            this.button13.Text = "L2";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.Green;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button14.Location = new System.Drawing.Point(459, 100);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(97, 30);
-            this.button14.TabIndex = 10;
-            this.button14.Text = "L3";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button15.Location = new System.Drawing.Point(368, 100);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(97, 30);
-            this.button15.TabIndex = 11;
-            this.button15.Text = "L4";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button16.Location = new System.Drawing.Point(275, 100);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(97, 30);
-            this.button16.TabIndex = 12;
-            this.button16.Text = "L5";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(180, 100);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(97, 30);
-            this.button17.TabIndex = 13;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(90, 100);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(97, 30);
-            this.button18.TabIndex = 14;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.Red;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button19.Location = new System.Drawing.Point(1107, 100);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(74, 30);
-            this.button19.TabIndex = 15;
-            this.button19.Text = "HU";
-            this.button19.UseVisualStyleBackColor = false;
+            this.L13.Location = new System.Drawing.Point(699, 13);
+            this.L13.Name = "L13";
+            this.L13.Size = new System.Drawing.Size(75, 23);
+            this.L13.TabIndex = 37;
+            this.L13.Text = "button6";
+            this.L13.UseVisualStyleBackColor = true;
+            this.L13.Visible = false;
             // 
             // Form1
             // 
@@ -1520,6 +1545,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1466, 885);
+            this.Controls.Add(this.L13);
             this.Controls.Add(this.showhjsd);
             this.Controls.Add(this.showhjjsd);
             this.Controls.Add(this.label15);
@@ -1685,18 +1711,19 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button L12;
+        private System.Windows.Forms.Button L1;
+        private System.Windows.Forms.Button L2;
+        private System.Windows.Forms.Button L3;
+        private System.Windows.Forms.Button L4;
+        private System.Windows.Forms.Button L5;
+        private System.Windows.Forms.Button L6;
+        private System.Windows.Forms.Button L7;
+        private System.Windows.Forms.Button L8;
+        private System.Windows.Forms.Button L9;
+        private System.Windows.Forms.Button L10;
+        private System.Windows.Forms.Button L11;
+        private System.Windows.Forms.Button L13;
     }
 }
 
