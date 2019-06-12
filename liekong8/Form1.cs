@@ -77,7 +77,7 @@ namespace liekong8
             V0 = 250;
             hjsd = (float)250.0;
             hjjsd = (float)120.0;
-            timer1.Interval = 30;
+            timer1.Interval = 20;
             timecost =  (float)timer1.Interval/1000;
             jiasudu = (float)Convert.ToInt16(showhjjsd.Text);
             fspeed = (float)Convert.ToInt16(csd.Text);
@@ -156,7 +156,7 @@ namespace liekong8
                 tmp += fspeed * timecost + (float)0.5 * 80 * timecost * timecost;
                 fspeed += timecost * 80;
             }
-            else if(fspeed> hjsd)
+            else if(fspeed> hjsd && runtype.Text != "加速")
             {
                 tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
                 fspeed -= timecost * jiasudu;
