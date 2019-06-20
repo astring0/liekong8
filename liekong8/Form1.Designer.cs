@@ -1400,7 +1400,7 @@
             // 
             this.groupBox1.Controls.Add(this.chusuduclik);
             this.groupBox1.Controls.Add(this.chusudu);
-            this.groupBox1.Location = new System.Drawing.Point(1066, 391);
+            this.groupBox1.Location = new System.Drawing.Point(1072, 383);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(227, 46);
             this.groupBox1.TabIndex = 14;
@@ -1437,14 +1437,14 @@
             this.yindaqi.Controls.Add(this.textBox3);
             this.yindaqi.Location = new System.Drawing.Point(748, 377);
             this.yindaqi.Name = "yindaqi";
-            this.yindaqi.Size = new System.Drawing.Size(290, 60);
+            this.yindaqi.Size = new System.Drawing.Size(304, 51);
             this.yindaqi.TabIndex = 16;
             this.yindaqi.TabStop = false;
             this.yindaqi.Text = "应答器";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(211, 26);
+            this.button7.Location = new System.Drawing.Point(211, 19);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(68, 23);
             this.button7.TabIndex = 21;
@@ -1455,7 +1455,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 36);
+            this.label14.Location = new System.Drawing.Point(13, 29);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 12);
             this.label14.TabIndex = 20;
@@ -1463,7 +1463,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 28);
+            this.textBox3.Location = new System.Drawing.Point(105, 21);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 21);
             this.textBox3.TabIndex = 19;
@@ -1486,7 +1486,7 @@
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Location = new System.Drawing.Point(420, 385);
+            this.groupBox2.Location = new System.Drawing.Point(748, 441);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(307, 52);
             this.groupBox2.TabIndex = 15;
@@ -1495,9 +1495,9 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(226, 17);
+            this.button10.Location = new System.Drawing.Point(214, 15);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.Size = new System.Drawing.Size(68, 23);
             this.button10.TabIndex = 27;
             this.button10.Text = "确定";
             this.button10.UseVisualStyleBackColor = true;
@@ -1544,7 +1544,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(1466, 885);
+            this.ClientSize = new System.Drawing.Size(1444, 881);
             this.Controls.Add(this.L13);
             this.Controls.Add(this.showhjsd);
             this.Controls.Add(this.showhjjsd);

@@ -146,17 +146,17 @@ namespace liekong8
         
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (crh.Left> 1111 - (int)(fspeed * fspeed / 2 / jiasudu))
+            if (crh.Left> 1111 - (int)(fspeed * fspeed / 2 / (jiasudu-5)))
             {
-                tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
-                fspeed -= timecost * jiasudu;
+                tmp += fspeed * timecost - (float)0.5 * (jiasudu+10) * timecost * timecost;
+                fspeed -= timecost * (jiasudu + 10);
             }
-            else if(fspeed<hjsd && runtype.Text == "加速")
+            else if(fspeed<hjsd - 10 && runtype.Text == "加速")
             {
                 tmp += fspeed * timecost + (float)0.5 * 80 * timecost * timecost;
                 fspeed += timecost * 80;
             }
-            else if(fspeed> hjsd && runtype.Text != "加速")
+            else if(fspeed> hjsd - 10 && runtype.Text != "加速")
             {
                 tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
                 fspeed -= timecost * jiasudu;
